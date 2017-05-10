@@ -1,0 +1,51 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Gradle : com.cs.ssm : ssm-1.0-SNAPSHOT.war">
+    <output-path>$PROJECT_DIR$/build/classes/artifacts/ssm</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$" />
+    </properties>
+    <root id="archive" name="ssm-1.0-SNAPSHOT.war">
+      <element id="javaee-facet-resources" facet="ssm_main/web/Web Gradle : ssm-1.0-SNAPSHOT.war" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="ssm_main" />
+          <element id="dir-copy" path="$PROJECT_DIR$/build/resources/main" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Gradle: org.apache.tomcat:tomcat-servlet-api:8.0.24" />
+          <element id="library" level="project" name="Gradle: jstl:jstl:1.2" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-beans:4.1.7.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-web:4.1.7.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-webmvc:4.1.7.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-tx:4.1.7.RELEASE" />
+          <element id="library" level="project" name="Gradle: com.alibaba:druid:1.0.15" />
+          <element id="library" level="project" name="Gradle: org.aspectj:aspectjweaver:1.8.6" />
+          <element id="library" level="project" name="Gradle: mysql:mysql-connector-java:5.1.36" />
+          <element id="library" level="project" name="Gradle: org.mybatis:mybatis-spring:1.2.3" />
+          <element id="library" level="project" name="Gradle: org.mybatis:mybatis:3.3.0" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-jdbc:4.1.7.RELEASE" />
+          <element id="library" level="project" name="Gradle: junit:junit:4.12" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-test:4.0.5.RELEASE" />
+          <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.8.7" />
+          <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.8.7" />
+          <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.8.7" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-core:4.1.7.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-aop:4.1.7.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-context:4.1.7.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-expression:4.1.7.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.hamcrest:hamcrest-core:1.3" />
+          <element id="library" level="project" name="Gradle: aopalliance:aopalliance:1.0" />
+          <element id="library" level="project" name="Gradle: commons-logging:commons-logging:1.2" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.shiro/shiro-core/1.2.2/b4a506e331007e769baf34a6015e5b17b3de7d19/shiro-core-1.2.2.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.shiro/shiro-web/1.2.2/77ebb339e4601d6e99146d5a6d4426f2922be75e/shiro-web-1.2.2.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.shiro/shiro-spring/1.2.2/ad3bdc241a3f27d99781fa541099f2ca7c33f6c8/shiro-spring-1.2.2.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.6.4/2396d74b12b905f780ed7966738bb78438e8371a/slf4j-api-1.6.4.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-beanutils/commons-beanutils/1.8.3/686ef3410bcf4ab8ce7fd0b899e832aaba5facf7/commons-beanutils-1.8.3.jar" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/build/classes/artifacts/ssm/exploded/ssm-1.0-SNAPSHOT.war/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>
