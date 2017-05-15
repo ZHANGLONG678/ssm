@@ -5,7 +5,11 @@ import com.cs.ssm.pojo.User;
 import com.cs.ssm.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.List;
 import java.util.Set;
 
 
@@ -34,4 +38,36 @@ public class UserServiceImpl implements UserService {
         return userMapper.findPermissions(username);
     }
 
+    @Override
+    public List<User> findAll() {
+        return userMapper.selectAll();
+    }
+
+    @Override
+    @Transactional
+    public int insert(User user) {
+        if(userMapper.insert(user)){
+            System.out.println("insert success");
+            return 1;
+        }
+        return 0;
+    }
+
+    @Override
+    public List<User> find2() {
+        return userMapper.select2();
+    }
+
+    @Override
+    public List<User> dynamicFind(String tableName) {
+        return userMapper.dynamicSelect(tableName);
+    }
+
+    @Override
+    public void createTable(String tableName) {
+       /* if (userMapper.existTable(tableName) == 1) {
+            userMapper.dropTable(tableName);
+        }*/
+        userMapper.createNewTable(tableName);
+    }
 }

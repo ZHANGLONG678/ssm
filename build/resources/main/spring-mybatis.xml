@@ -34,6 +34,8 @@
         <property name="dataSource" ref="dataSource" />
         <!-- 自动扫描mapping.xml文件 -->
         <property name="mapperLocations" value="classpath:mapper/*.xml"></property>
+        <!-- 分页查询 -->
+        <property name="configLocation" value="classpath:mybatis-config.xml" />
     </bean>
 
     <!-- DAO接口所在包名，Spring会自动查找其下的类 -->
@@ -88,4 +90,49 @@
     <bean class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
         <property name="securityManager" ref="securityManager"/>
     </bean>
+
+
+    <!-- bean -->
+    <bean id="study" class="com.cs.ssm.quartz.Study" />
+
+    <!-- 定义调用对象和调用对象的方法 -->
+    <bean id="studyDetail"
+          class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <!-- 调用的类 -->
+        <property name="targetObject" ref="study" />
+        <!-- 调用类中的方法 -->
+        <property name="targetMethod" value="doCreate" />
+        <!-- 是否允许任务并发执行。当值为false时，表示必须等到前一个线程处理完毕后才再启一个新的线程 -->
+        <property name="concurrent" value="false"/>
+    </bean>
+
+    <!-- quartz-1.8以前的配置
+    <bean id="myJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+    <property name="jobDetail"> <ref bean="studyDetail" /> </property>
+    <property name="cronExpression"> <value>0/1 * * * * ?</value> </property> </bean> -->
+
+    <!-- quartz-2.x的配置 -->
+    <!-- 定义触发时间 -->
+    <bean id="myJobTrigger"
+          class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail">
+            <ref bean="studyDetail" />
+        </property>
+        <property name="cronExpression">
+            <value>0/5 * * * * ?</value>
+        </property>
+    </bean>
+
+    <!-- 总管理类 如果将lazy-init='false'那么容器启动就会执行调度程序  -->
+    <!-- 如果lazy-init='true',则需要实例化该bean才能执行调度程序 -->
+    <bean name="startQuertz" lazy-init="false" autowire="no"
+          class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <property name="triggers">
+            <list>
+                <ref bean="myJobTrigger" />
+            </list>
+        </property>
+        <!-- <property name="autoStartup" value="true"/>  -->
+    </bean>
+
 </beans>

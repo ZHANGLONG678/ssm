@@ -22,6 +22,8 @@ dependencies {
     compile 'org.springframework:spring-web:4.1.7.RELEASE'
     compile 'org.springframework:spring-webmvc:4.1.7.RELEASE'
     compile 'org.springframework:spring-tx:4.1.7.RELEASE'
+    compile 'org.springframework:spring-context-support:4.1.7.RELEASE'
+
     compile 'com.alibaba:druid:1.0.15'
     compile 'org.aspectj:aspectjweaver:1.8.6'
     compile 'mysql:mysql-connector-java:5.1.36'
@@ -39,9 +41,12 @@ dependencies {
     compile "org.apache.shiro:shiro-web:1.2.2"
     compile 'org.apache.shiro:shiro-spring:1.2.2'
 
-    providedCompile 'javax.servlet:servlet-api:2.5'
-    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile 'org.quartz-scheduler:quartz:2.2.1'
+    //compile files('libs/shardbatis-2.0.0B.jar')
 
+    compile 'com.github.pagehelper:pagehelper:4.1.0'
+
+    providedCompile 'javax.servlet:servlet-api:2.5'
     mybatisGenerator 'org.mybatis.generator:mybatis-generator-core:1.3.5'
     mybatisGenerator 'mysql:mysql-connector-java:5.1.40'
     mybatisGenerator 'tk.mybatis:mapper:3.3.9'

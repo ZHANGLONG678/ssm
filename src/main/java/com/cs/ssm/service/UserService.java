@@ -2,6 +2,7 @@ package com.cs.ssm.service;
 
 import com.cs.ssm.pojo.User;
 
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -28,5 +29,16 @@ public interface UserService {
      * @return
      */
     public Set<String> findPermissions(String username) ;
+
+    public List<User> findAll();
+
+    public int insert(User user);
+
+    public List<User> find2();
+
+    public List<User> dynamicFind(String tableName);
+
+    public void createTable(String tableName);
+
 
 }

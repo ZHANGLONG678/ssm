@@ -29,18 +29,23 @@
           <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.8.7" />
           <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.8.7" />
           <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.8.7" />
+          <element id="library" level="project" name="Gradle: org.apache.shiro:shiro-core:1.2.2" />
+          <element id="library" level="project" name="Gradle: org.apache.shiro:shiro-web:1.2.2" />
+          <element id="library" level="project" name="Gradle: org.apache.shiro:shiro-spring:1.2.2" />
+          <element id="library" level="project" name="Gradle: org.quartz-scheduler:quartz:2.2.1" />
+          <element id="library" level="project" name="Gradle: com.github.pagehelper:pagehelper:4.1.0" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-core:4.1.7.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-aop:4.1.7.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-context:4.1.7.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-expression:4.1.7.RELEASE" />
           <element id="library" level="project" name="Gradle: org.hamcrest:hamcrest-core:1.3" />
+          <element id="library" level="project" name="Gradle: commons-beanutils:commons-beanutils:1.8.3" />
+          <element id="library" level="project" name="Gradle: c3p0:c3p0:0.9.1.1" />
+          <element id="library" level="project" name="Gradle: com.github.jsqlparser:jsqlparser:0.9.4" />
           <element id="library" level="project" name="Gradle: aopalliance:aopalliance:1.0" />
           <element id="library" level="project" name="Gradle: commons-logging:commons-logging:1.2" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.shiro/shiro-core/1.2.2/b4a506e331007e769baf34a6015e5b17b3de7d19/shiro-core-1.2.2.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.shiro/shiro-web/1.2.2/77ebb339e4601d6e99146d5a6d4426f2922be75e/shiro-web-1.2.2.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.shiro/shiro-spring/1.2.2/ad3bdc241a3f27d99781fa541099f2ca7c33f6c8/shiro-spring-1.2.2.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.6.4/2396d74b12b905f780ed7966738bb78438e8371a/slf4j-api-1.6.4.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-beanutils/commons-beanutils/1.8.3/686ef3410bcf4ab8ce7fd0b899e832aaba5facf7/commons-beanutils-1.8.3.jar" />
+          <element id="library" level="project" name="Gradle: org.slf4j:slf4j-api:1.6.6" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context-support/4.1.7.RELEASE/db508937a1033bd3267e57566044df705076dc6/spring-context-support-4.1.7.RELEASE.jar" />
         </element>
       </element>
       <element id="directory" name="META-INF">
